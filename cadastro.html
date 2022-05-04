@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Girassol - Faça seu cadastro</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+   <link rel="manifest"   href="manifest.json">
+</head>
+
+<body>
+  <header>
+    <img src="imagem/logo_girassol.png" class="logo" alt="">
+    <h1>Cadastre sua empresa</H1>
+  </header>
+  <main>
+    <form id="registerForm">
+      <div class="radioOpt">
+        <input class="registerInput" type="radio" id="admin" name="type" value="admin">
+        <label class="registerbtn "for="admin">Perfil Administrativo*</label>
+      </div>
+
+      <div class="radioOpt">
+        <input class="registerInput" type="radio" id="matriz" name="type" value="matriz" >
+        <label class="registerbtn "for="matriz">Matriz*</label>
+      </div>
+
+        <div class="radioOpt">
+
+          <input class="registerInput" type="radio" id="filial" name="type" value="filial">
+          <label class="registerbtn "for="filial">Filiais</label>
+        </div>
+          <div class="radioOpt">
+            <input class="registerInput" type="radio" id="outros" name="type" value="outros">
+            <label class="registerbtn" for="outros">Outros perfis de Usuario</label>
+          </div>
+          <p class="steps">
+            
+            <label for="terms">
+              <input type="checkbox" class="checkbox-round" />
+              Aceito os termos de privacidade e termos de uso* 
+            </label>
+          </p>
+          <p class="steps">(*) Etapas Obrigatórias</p>
+        <input class="cta action2" style="color: #FFF; font-weight: bold;" type="submit" value="AVANÇAR">
+          <a class="cta action" style="color: #FFF; font-weight: bold;" href="index.html">FINALIZAR CADASTRO</a>
+      </form>
+</main>
+</body>  
+<script>
+  document.querySelector('#registerForm').addEventListener('submit', () => {
+    event.preventDefault();
+    const values = Object.fromEntries(new FormData(event.target));
+    let obj =JSON.parse(JSON.stringify(values));
+    switch (obj.type) {
+      case "admin":
+      window.location.href = "perfilAdministrativo.html"
+        break;
+      case "matriz":
+      window.location.href = "matriz.html"
+        break;
+      case "filial":
+      window.location.href = "matriz.html"
+        break;
+      case "outros":
+        window.location.href = "outrosPerfis.html"
+        break;
+    }
+  });
+  
+</script>
+</html>
+
+<!-- <a class="igual" href="perfilAdministrativo.html"></a> <br><br>
+<a  class="igual" href="matriz.html"></a> <br><br>
+<a class="igual" href="filiais.html"></a> <br><br>
+<a class="igual" href="outrosPerfis.html"></a> <br> -->

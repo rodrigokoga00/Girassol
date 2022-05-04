@@ -1,0 +1,21 @@
+{
+  "name": "Girassol",
+  "short_name": "Gira",
+  "start_url": "index.html",
+  "background_color": "#EB8149",
+  "theme_color": "#2B0A70",
+  "display": "standalone",
+  "icons":[
+    {
+      "src":"imagem/icone192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src":"imagem/icone512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+      
+    }]
+
+}

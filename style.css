@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+ *{
+  font-family: 'Montserrat', sans-serif; 
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+h1{
+  font-weight: bold;
+  color: #FFF;
+  font-size: 1em;
+}
+body{
+  display: flex;
+  background: rgb(51,11,108);
+  background: linear-gradient(156deg, rgba(51,11,108,1) 0%, rgba(209,44,148,1) 100%, rgba(209,44,148,1) 100%);
+  background-size: cover;
+  text-align:center;
+  color:white;
+  font-size:30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  flex: 1;
+}
+
+form{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: unset;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 38vh;
+  margin-top: 6vh;
+}
+.inputs{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.authInput{
+  align-self: center;
+  width: 60%;
+  border-radius: 20px;
+  background: #f2f2f2;
+  height: 5vh;
+  outline: 0;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  font-size: 1, 3em;
+  padding: 15px;
+}
+.authInput:focus{
+    border: double;
+    border-width: 1px;
+    border-color: white;
+}
+
+#login_svg{
+  width: 50vw;
+}
+#form_footer{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: unset;
+  flex-wrap: nowrap;
+}
+
+.cta {
+  cursor: pointer;
+  border: none;
+  position: relative;
+  margin: auto;
+  margin-top: 1.3em;
+  padding: 19px 22px;
+  border-radius: 20px;
+  min-width: 15vw;
+  min-height: 6vh;
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
+  vertical-align: middle;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.action {
+background: rgb(191,103,13);
+background: linear-gradient(0deg, rgba(191,103,13,1) 0%, rgba(250,155,59,1) 100%);
+}
+.action2{ 
+  background: rgb(162,59,250);
+  background: linear-gradient(90deg, rgba(162,59,250,1) 0%, rgba(134,26,235,1) 51%, rgba(111,0,222,1) 100%);
+}
+  .wow {
+  width: 100px;
+}
+
+ a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+
+.logo{
+  width:45%;
+}
+
+.etapas{
+font-size: 25px;
+  
+}
+.termos{
+color: white;
+text-decoration: underline;
+background:none;
+}
+
+@media screen and (max-width: 600px) {
+ #login_svg {
+    width: 85vw;
+  }
+}
+.radio_btns{
+  display: flex;
+  flex-direction: column;
+}
+
+.registerInput{
+  display : none;
+}
+.radioOpt{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.registerbtn{
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #f2f2f2;
+  color: #000;
+  border-radius: 20px;
+  padding: 10px 22px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.registerInput:checked ~ label {
+  background: rgb(162,59,250);
+  background: linear-gradient(90deg, rgba(162,59,250,1) 0%, rgba(134,26,235,1) 51%, rgba(111,0,222,1) 100%);}
+
+  #registerForm{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: unset;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 38vh;
+  margin-top: 18vh;
+}
+#registerForm{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: unset;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 38vh;
+  margin-top: 18vh;
+}
+.steps{
+  width: 100%;
+  text-align: center !important;
+  color: #a8a8a8;
+  font-size: medium;
+  margin: 5px 0;
+}
+
+.checkbox-round {
+  width: 2.2em;
+  height: 2em;
+  background-color: white;
+  border-radius: 34%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background: rgb(191,103,13);
+  background: linear-gradient(0deg, rgba(191,103,13,1) 0%, rgba(250,155,59,1) 100%);
+}
+
+.topHeader{
+  display: flex;
+  flex-direction: column;
+}
+.logoHeader{
+  margin: 0.25em auto;
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+}
+.logoHeader h1 {
+  text-align: start;
+}
+
+.logoHeader > img{
+  width:35%;
+}
+
+.profileHeader{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  margin: 0;
+  margin-left: 1.3em;
+}
+
+.profileHeader p {
+  width: 100%;
+  text-align: left !important;
+  color: #707070;
+  font-size: medium;
+  font-weight: bolder;
+  margin: 5px 0;
+}
+#profileHeaderCompany{
+  color: #FFF !important;
+  font-size: 24px;
+  text-align: left !important;
+}
+.container-wrap{
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container{
+  margin-top: 2rem;
+  flex: 1 0 50%;
+}
+.containerItem{
+  margin-top: 1rem;
+}
+.containerTitle{
+  text-align: center !important;
+  color: #707070;
+  font-size: 0.75em;
+}
+.containerValue{
+  text-align: center !important;
+  color: #FFF;
+  font-size: 0,75em;
+}
+
+footer{
+  background-color: orange;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  position: fixed;
+  bottom: 0%;
+  right: 0;
+  left:0;
+  height: 7%;
+  display: flex;
+  align-items: center;
+}
+
+.nave{
+padding-right: 25px;
+padding-left: 25px;
+}
+.nave > img{
+  width: 1.5em;
+  height: 1.5em;
+}
+#chartImage{
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  
+}
